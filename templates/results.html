@@ -1,0 +1,13 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery="full" %}
+{% bootstrap_messages %}
+
+<div class="container h-100 d-flex justify-content-center">
+    <div class="jumbotron my-auto">
+        <h3 class="text-center">"{{ exc }}!", {{ gp }} {{ adv }} said, as {{ pr }} {{ verb }} {{ pr2 }} {{ adj }} {{ noun }}.</h3>
+        <h5 class="text-center"> The end. </h5>
+        <hr>
+        <h5 class="text-center"><a class="btn btn-primary" href="/">Play again</a></h5>
+    </div>
+</div>

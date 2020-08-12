@@ -1,0 +1,19 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery="full" %}
+{% bootstrap_messages %}
+
+<div class="container h-100 d-flex justify-content-center">
+    <div class="jumbotron my-auto">
+        <h3 class="text-center">Statistics about this website:</h3>
+        <h4 class="text-center">This game has been played <b>{{ hits }}</b> {{ plural }}.</h4> 
+        {% if clhits %}
+            <h4 class="text-center">You have played this game <b>{{ clhits }}</b> {{ pluralcl }}.</h4>
+        {% else %}
+            <h4 class="text-center">You have not played this game yet.</h4>
+        {% endif %}
+        <hr>
+        <h6 class="text-center"><a class="btn btn-primary" href="/">Click here to play!</a></h6>
+       
+    </div>
+</div>

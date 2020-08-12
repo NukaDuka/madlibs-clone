@@ -1,0 +1,46 @@
+
+{% load bootstrap4 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_messages %}
+<div class="container h-100 w-100 d-flex justify-content-center">
+<div class="jumbotron my-auto">
+<h2>Cool madlibs game</h2>
+<hr>
+<h4> Insert the following:</h4>
+<form action="/results/" method="post" class="form">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td style="text-align:right"><label for="pr">A pronoun (he/she/other):</label></td>
+            <td><input id="pr" type="text" name="pr" required autocomplete="off" class="form-control"></td>
+        <tr>
+            <td style="text-align:right"><label for="gp">A name:</label></td>
+            <td><input id="gp" type="text" name="gp" required autocomplete="off" class="form-control"></td>
+        <tr>   
+            <td style="text-align:right"><label for="exc">An exclamation:</label></td>
+            <td><input id="exc" type="text" name="exc" required autocomplete="off" class="form-control"></td>
+        </tr>
+        <tr>
+            <td style="text-align:right"><label for="adv">An adverb:</label></td>
+            <td><input id="adv" type="text" name="adv" required autocomplete="off" class="form-control"></td>
+        </tr>
+        <tr>        
+            <td style="text-align:right"><label for="verb">A verb:</label></td>
+            <td><input id="verb" type="text" name="verb" required autocomplete="off" class="form-control"></td>
+        </tr>
+        <tr>
+            <td style="text-align:right"><label for="adj">An adjective:</label></td>
+            <td><input id="adj" type="text" name="adj" required autocomplete="off" class="form-control"></td>
+        </tr>
+        <tr>
+            <td style="text-align:right"><label for="noun">A noun:</label></td>
+            <td><input id="noun" type="text" name="noun" required autocomplete="off" class="form-control"></td>
+        <tr>
+    </table>
+    <br>
+    <p class="text-center"><input type="submit" value="Submit" class="btn btn-primary btn-sm"> <a class="btn btn-primary btn-sm" href="/stats">Site stats</a></p>
+</form>
+</div>
+</div>
