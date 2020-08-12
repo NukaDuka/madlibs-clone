@@ -1,4 +1,5 @@
-# madlibs-clone: A scuffed clone of Mad Libs, a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story before reading aloud.
+# madlibs-clone: A scuffed clone of Mad Libs
+Mad Libs is a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story before reading aloud, usually to humorous effect.
 
 ## Links
 [Link to original game](http://www.madlibs.com)
