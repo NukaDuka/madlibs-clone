@@ -1,8 +1,8 @@
 # madlibs-clone: A scuffed clone of Mad Libs
 Mad Libs is a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story before reading aloud, usually to humorous effect.
 
-## Links
-[Link to original game](http://www.madlibs.com)
+## Link to original game
+[Mad Libs](http://www.madlibs.com)
 
 ## Description
 This project uses Django as it's web framework and is written in Python3. It uses Twitter's Bootstrap 4 library to give it a modern look.
